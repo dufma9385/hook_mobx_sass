@@ -1,16 +1,20 @@
 import React from 'react';
-import Counter from './components/Counter';
-import SuperMarket from './components/SuperMarket';
+import Community from './components/Community';
+import Counter from './components/test/Counter';
+import SuperMarket from './components/test/SuperMarket';
 import WriteForm from './components/WriteForm';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter />
       <hr></hr>
       <SuperMarket />
       <hr></hr>
       <WriteForm />
+      <hr></hr>
+      <hr></hr> */}
+      <Community />
     </div>
   );
 }
