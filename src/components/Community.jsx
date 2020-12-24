@@ -1,13 +1,13 @@
 import React from 'react';
-import BoardList from './BoardList';
 import SearchBar from './SearchBar';
+import useStore from '../useStore';
 
 const Community = () => {
+    const { search } = useStore();
+    // alert(search.input);
     return(
         <div>
-            <h1>Community</h1>
             <SearchBar />
-            {/* <BoardList /> */}
         </div>
         
     )

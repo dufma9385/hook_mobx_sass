@@ -1,5 +1,4 @@
 import React from 'react';
-import { useObserver } from 'mobx-react';
 import useStore from '../useStore';
 import EachBoard from './EachBoard';
 
@@ -9,7 +8,6 @@ const BoardList = (input) => {
     return(
         <div>
             {list.boardList
-            .filter(e => e.writer === input.input)
             .map(e =>
                 <EachBoard key={e.id} title = {e.title} writer= {e.writer}/>)}
         </div>
