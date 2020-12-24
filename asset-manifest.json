@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/hook_mobx_sass/static/js/main.de5a375a.chunk.js",
+    "main.js.map": "/hook_mobx_sass/static/js/main.de5a375a.chunk.js.map",
+    "runtime-main.js": "/hook_mobx_sass/static/js/runtime-main.ee431ab4.js",
+    "runtime-main.js.map": "/hook_mobx_sass/static/js/runtime-main.ee431ab4.js.map",
+    "static/js/2.73303aa4.chunk.js": "/hook_mobx_sass/static/js/2.73303aa4.chunk.js",
+    "static/js/2.73303aa4.chunk.js.map": "/hook_mobx_sass/static/js/2.73303aa4.chunk.js.map",
+    "index.html": "/hook_mobx_sass/index.html",
+    "static/js/2.73303aa4.chunk.js.LICENSE.txt": "/hook_mobx_sass/static/js/2.73303aa4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee431ab4.js",
+    "static/js/2.73303aa4.chunk.js",
+    "static/js/main.de5a375a.chunk.js"
+  ]
+}
