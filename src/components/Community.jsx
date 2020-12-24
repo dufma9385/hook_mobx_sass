@@ -7,7 +7,7 @@ const Community = () => {
         <div>
             <h1>Community</h1>
             <SearchBar />
-            <BoardList />
+            {/* <BoardList /> */}
         </div>
         
     )

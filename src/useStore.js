@@ -1,10 +1,8 @@
-import { counter } from './components/stores/counter';
-import { write } from './components/stores/write';
 import { search } from './components/stores/search';
 import { list } from './components/stores/list';
 
 const useStore = ()=> {
-    return { counter, write, search, list };
+    return { search, list };
 };
 
 export default useStore;
