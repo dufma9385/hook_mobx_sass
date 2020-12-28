@@ -4,6 +4,9 @@ import useStore from '../useStore';
 import BoardList from './BoardList';
 import BoardListAll from './BoardListAll';
 
+import './style/community.scss';
+import searchIcon from './images/search.svg';
+
 const SearchBar = () => {
 
     const { search } = useStore();
@@ -25,12 +28,14 @@ const SearchBar = () => {
     }
     return useObserver (()=>(
         <div>
+            <div className="searchBar">
+                <img src={searchIcon}/>
                 <input type="text" placeholder="커뮤니티 검색" value={input}
                     onChange={onChange} onKeyPress={onKeyPress}/>
-                <div>
-                    {search.input}
-                    {search.input === "" ? <BoardListAll/> : <BoardList input={search.input}/>}
-                </div>
+            </div>
+            <hr></hr>
+            
+            {search.input === "" ? <BoardListAll/> : <BoardList input={search.input}/>}
         </div>
     ));
 }

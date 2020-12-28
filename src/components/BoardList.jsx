@@ -1,17 +1,21 @@
 import React from 'react';
-import { useObserver } from 'mobx-react';
 import useStore from '../useStore';
 import EachBoard from './EachBoard';
+import HowView from './HowView';
+
 
 const BoardList = (input) => {
-    const { list, search } = useStore();
+    const { list } = useStore();
 
     return(
         <div>
-            {list.boardList
-            .filter(e => e.writer === input.input)
-            .map(e =>
-                <EachBoard key={e.id} title = {e.title} writer= {e.writer}/>)}
+            <HowView />
+            <div>
+                {list.boardList
+                .filter(e => e.writer === input.input)
+                .map(e =>
+                    <EachBoard key={e.id} title = {e.title} writer= {e.writer} img = {e.image}/>)}
+            </div>
         </div>
     )
 }

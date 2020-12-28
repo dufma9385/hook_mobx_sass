@@ -1,16 +1,17 @@
 import React from 'react';
 
-const EachBoard = ({ title, writer }) => {
+
+const EachBoard = ({ title, writer, img }) => {
     return (
-        <div>
-            <div>
-                <h2>{title}</h2>
+        <div className="getBoardList">
+            <div className="imgdiv">
+                <img src={img} />
             </div>
-            <div>
-                {writer}
-            </div>
-            <div>
-                10분전
+            <div className="titlediv">
+                <p>{title}</p>
+                <p>{writer}</p>
+                <p id="state">10분전</p>
+                <p id="like">좋아요</p>
             </div>
         </div>
 
