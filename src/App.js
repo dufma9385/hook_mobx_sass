@@ -1,13 +1,13 @@
 import React from 'react';
+import Community from './components/Community';
 import Footer from './components/Footer';
 import Headers from './components/Header';
-import Search from './components/Search';
 
 function App() {
   return (
     <div className="App">
       <Headers />
-      <Search/>
+      <Community />
       <Footer />
     </div>
   );

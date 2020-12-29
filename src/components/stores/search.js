@@ -5,8 +5,6 @@ const search = observable ({
 
     setInput(value) {
         this.input = value;
-        // console.log(value);
-        // alert(this.input);
     }
 });
 

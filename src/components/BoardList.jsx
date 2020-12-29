@@ -1,15 +1,11 @@
 import React from 'react';
 import useStore from '../useStore';
 import EachBoard from './EachBoard';
-import HowView from './HowView';
-
 
 const BoardList = (input) => {
     const { list } = useStore();
-
     return(
         <div>
-            <HowView />
             <div>
                 {list.boardList
                 .filter(e => e.writer === input.input)

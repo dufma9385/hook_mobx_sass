@@ -1,8 +1,12 @@
+$black: #000000;
+
 @mixin default-box {
-    div {
+    * {
         // border: solid 1px gray;
         text-align: center;
-        max-width: 540px;
+        // margin: 0;
+        // padding: 0;
+        box-sizing: border-box;
     }
 }
 

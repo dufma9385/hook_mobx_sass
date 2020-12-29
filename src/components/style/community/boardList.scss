@@ -1,0 +1,28 @@
+@import "../mixin.scss";
+@include default-box;
+
+.getBoardList {
+    width: auto;
+    display: flex;
+    
+    &.list {
+        .imgdiv {
+            display: flex;
+        
+            img {
+                margin: auto 0;
+                
+            }
+        }
+        .titlediv {
+            // margin: auto;
+            text-align: left;
+        }
+    }
+    &.card {
+        .imgdiv {
+            border: 1px solid blue;
+        }
+    }
+    
+}

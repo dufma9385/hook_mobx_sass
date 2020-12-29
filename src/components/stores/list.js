@@ -8,7 +8,13 @@ const list = observable ({
         {id:"2", title: "오늘 AI 맞춤 문제 15개는 다 풀었다.", writer: "안준모", image: image},
         {id:"3", title: "공부 인증함", writer:"홍길동", image: image},
         {id:"4", title: "오늘 공부 인증", writer:"안준모", image: image}
-    ]
+    ],
+
+    click: "",
+    setClick(value){
+        this.click = value;
+    },
+    
 });
 
 export { list };
